@@ -247,7 +247,7 @@ NSInteger const AIR_CALLOUT_OPEN_ZINDEX_BASELINE = 999;
     }
 
     // the actual marker got clicked
-    id event = @{
+    /*id event = @{
                  @"action": @"marker-press",
                  @"id": marker.identifier ?: @"unknown",
                  @"coordinate": @{
@@ -260,6 +260,7 @@ NSInteger const AIR_CALLOUT_OPEN_ZINDEX_BASELINE = 999;
     if (marker.map.onMarkerPress) marker.map.onMarkerPress(event);
 
     [marker.map selectAnnotation:marker animated:NO];
+	*/
 }
 
 - (void)hideCalloutView
